@@ -1,0 +1,21 @@
+{
+  "name": "smash-project",
+  "version": "1.0.0",
+  "description": "This is a website for Super Smash Bros Ultimate. This project will show all fighters stats and will be built by using html, css, and javascript.",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+ },
+  "author": "Kolby Ellis",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
