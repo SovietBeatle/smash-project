@@ -1,10 +1,211 @@
 
+/*Typography*/
+h1 {
+font-size: 5em;
+} 
 
-.fighterbanner {
+body {
+    background-color: white;
+}
+
+.container {
+    padding-left: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+  }
+/*Pictures*/
+  
+  .fighterbanner {
+    width: 100vw;
+  } 
+
+.logo {
+    width: 15%;
+    display: flex;
+    padding: 1em;
+}
+
+
+.fighter-img {
+    width: 15%;
+}
+
+.mario-stats {
+  width: 40%;
+}
+
+/*home Navbar*/
+ul {
+margin: 0;
+}
+
+
+
+.ul-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+
+  }
+  
+  .li-nav {
+    width: 25%;
+  }
+
+  .li-nav:first-child {
+    width: 75%;
+    transform-origin: 100% 50%; 
+    transform: scaleX(1.5);    
+    pointer-events: none;
+    font-family: Oswald;
+  }
+
+  .search-bar {
+    margin-left: auto;
+
+  }
+  
+  .search-input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.25em;
+ 
+  }
+  
+  .search-button {
+    background-color: #70cb00;
+    border: none;
+    color: #fff;
+    font-family: Oswald;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    margin-left: 0.5em;
+
+  }
+  
+
+.a-nav {
+    position: relative;
+    background-color: #00465a;
+    box-sizing: border-box;
+    font-family: Oswald;
+    display: block;
+    transform: skewX(-45deg);
+    width: 100%;
+    min-height: 3em;
+    text-align: center;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+
+}
+
+.span-nav {
+    color: #fff;
+    position: absolute;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%) skewX(45deg);
+    top: 50%;
+    left: 50%;
     width: 100%;
 }
 
-.logo {
-    width: 15%
+.ul-nav > li:nth-child(2) {
+    margin-left: calc(-2px - 1em);
+  }
+
+
+  ul {
+margin: 0;
 }
 
+
+
+.ul-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+
+  }
+  
+  .li-nav {
+    width: 25%;
+  }
+
+  .li-nav:first-child {
+    width: 75%;
+    transform-origin: 100% 50%; 
+    transform: scaleX(1.5);    
+    pointer-events: none;
+    font-family: Oswald;
+  }
+
+  .search-bar {
+    margin-left: auto;
+
+  }
+  
+  .search-input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.25em;
+ 
+  }
+  
+  .search-button {
+    background-color: #70cb00;
+    border: none;
+    color: #fff;
+    font-family: Oswald;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    margin-left: 0.5em;
+
+  }
+  
+
+.a-nav {
+    position: relative;
+    background-color: #00465a;
+    box-sizing: border-box;
+    font-family: Oswald;
+    display: block;
+    transform: skewX(-45deg);
+    width: 100%;
+    min-height: 3em;
+    text-align: center;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+
+}
+
+.span-nav {
+    color: #fff;
+    position: absolute;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%) skewX(45deg);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.ul-nav > li:nth-child(2) {
+    margin-left: calc(-2px - 1em);
+  }
+
+  /*stats page*/
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+  /*Pictures*/
+
+footer {
+    background-color: black;
+}

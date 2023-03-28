@@ -6,43 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
 
     <title>Smash Project</title>
+
+  
+
 </head>
 <body>
-<div class="container col">
-<img src="./img/Super_Smash_Bros._Ultimate_logo.svg.png" alt="smash logo" class="logo">
-<img src="./img/fighterbanner.jpg" alt="Smash banner" class="fighterbanner">
+  <img src="./img/Super_Smash_Bros._Ultimate_logo.svg.png" alt="smash logo" class="logo mx-auto d-block">
+  <div class="container col text-center">
+    <img src="./img/fighterbanner.jpg" alt="Smash banner" class="fighterbanner mx-auto d-block">
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Super Smash Bros Ultimate</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Stats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tier List</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search By Fighter" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+
+    <ul class="ul-nav">
+      <li class="li-nav"><a class="a-nav bg-danger" href="#"><span class="span-nav">Choose your fighter</span></a></li>
+      <li class="li-nav"><a class="a-nav bg-primary" href="#"><span class="span-nav">Home</span></a></li>
+      <li class="li-nav"><a class="a-nav bg-success" href="#"><span class="span-nav">Stats</span></a></li>
+      <li class="li-nav"><a class="a-nav bg-warning" href="#"><span class="span-nav">Tier List</span></a></li>
+      
+      <li class="li-nav search-bar">
+        <form>
+          <input type="text" class="search-input bg-white" placeholder="Search by Fighter">
+          <button type="submit" class="search-button">Go</button>
+        </form>
+      </li>
+    </ul>
 
 </div>
-
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 426">
   <image width="1280" height="426" xlink:href="./img/roster.jpg"></image>   
-  <a xlink:href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Mario</strong>">
+  <a xlink:href="mario.html" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Mario</strong>">
     <rect x="0" y="0" fill="#fff" opacity="0" width="100" height="60"></rect>
   </a>
   <a xlink:href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Peach</strong>">
@@ -302,7 +297,8 @@
   </a>
 </svg>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>   
 </body>
