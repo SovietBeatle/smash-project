@@ -1,11 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const marioRect = document.getElementById('marioRect');
-    const peachRect = document.getElementById('peachRect');
+const marioRect = document.getElementById("marioRect");
+const peachRect = document.getElementById("peachRect");
 
-    marioRect.addEventListener('click', function() {
-        console.log('Mario clicked!');
-        peachRect.setAttribute('fill', 'rgb(0, 250, 0)');
-    });
-
-    
+marioRect.addEventListener("click", function() {
+  peachRect.setAttribute("stroke", "none");
+  peachRect.setAttribute("fill", "#00FF00");
+  peachRect.setAttribute("opacity", "0.5");
 });

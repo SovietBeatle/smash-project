@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
-    <script src="./counters.js"></script>
-
-
-    <title>Smash Project</title>
-
-  
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Smash Project</title>
 </head>
 <body>
   <img src="./img/Super_Smash_Bros._Ultimate_logo.svg.png" alt="smash logo" class="logo mx-auto d-block">
   <div class="container col text-center">
     <img src="./img/fighterbanner.jpg" alt="Smash banner" class="fighterbanner mx-auto d-block">
-
-
     <ul class="ul-nav">
-      <li class="li-nav"><a class="a-nav bg-danger" href="#"><span class="span-nav">Click on your character to see that fighters list of counters</span></a></li>
+      <li class="li-nav"><a class="a-nav bg-danger" href="#"><span class="span-nav">Click the character below to reveal their counters</span></a></li>
       <li class="li-nav"><a class="a-nav bg-primary" href="index.html"><span class="span-nav">Home</span></a></li>
       <li class="li-nav"><a class="a-nav bg-success" href="#"><span class="span-nav">Stats/Tier List</span></a></li>
       <li class="li-nav"><a class="a-nav bg-warning" href="counters.html"><span class="span-nav">Counters</span></a></li>
-      
       <li class="li-nav search-bar">
         <form>
           <input type="text" class="search-input bg-white" placeholder="Search by Fighter">
@@ -35,26 +25,25 @@
         </form>
       </li>
     </ul>
-
-</div>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 426">
-  <image width="1280" height="426" xlink:href="./img/roster.jpg"></image>  
-
-  <a id="mario" xlink:href="#">
-    <rect id="marioRect" x="0" y="0" fill="red" opacity="0" width="100" height="60" class="mario"></rect>
-  </a>
-  <a id="peach" xlink:href="#">
-    <rect id="peachRect" x="0" y="61" fill="#fff" opacity="0" width="100" height="58" class="peach"></rect>
-  </a>
+  </div>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 426">
+    <image width="1280" height="426" xlink:href="./img/roster.jpg"></image>   
+    <a xlink:href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Mario</strong>">
+      <rect id="marioRect" x="0" y="0" fill="#fff" opacity="0" width="100" height="60"></rect>
+    </a>
+    <a xlink:href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Peach</strong>">
+      <rect id="peachRect" x="0" y="61" fill="#fff" opacity="0" width="100" height="58"></rect>
+    </a>
+  </svg>
   
-</svg>
-
+  <script src="counters.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
-    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-
-    
-</body>
-
-</html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  </body>
+  </html>
